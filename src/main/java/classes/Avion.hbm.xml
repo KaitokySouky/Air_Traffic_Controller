@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping
+  PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+<hibernate-mapping package="classes">
+<class name="Avion" table="Avion">
+<id name="idavion"  column="idavion">
+<generator class="increment"/>
+</id>
+<property name="type" column="type" />
+<property name="consommation" column="consommation" />
+<property name="capacité" column="capacité" />
+ 
+ <many-to-one name="aeroport" class="Aeroport" column="aeroport" />
+
+
+</class>
+
+
+</hibernate-mapping>
+
+
+
+   

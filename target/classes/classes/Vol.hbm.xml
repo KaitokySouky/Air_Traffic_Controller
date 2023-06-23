@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping
+  PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+<hibernate-mapping package="classes">
+<class name="Vol" table="Vol">
+<id name="numero"  column="numero">
+<generator class="increment"/>
+</id>
+<property name="départ" column="départ" />
+<property name="arrivée" column="arrivée" />
+<property name="altitude" column="altitude" />
+ <many-to-one name="avion" class="Avion" column="avion" />
+<property name="heuredépart" column="heuredépart" />
+<property name="heureArrivée" column="heureArrivée" />
+
+
+
+
+
+    
+</class>
+
+
+</hibernate-mapping>
+
+   

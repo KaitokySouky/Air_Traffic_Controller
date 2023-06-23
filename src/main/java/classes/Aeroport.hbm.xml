@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE hibernate-mapping
+  PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+<hibernate-mapping package="classes">
+<class name="Aeroport" table="Aeroport">
+<id name="idaeroport"  column="idaeroport" type="int">
+<generator class="increment"/>
+</id>
+
+
+
+
+
+
+<property name="nom" column="nom" />
+<property name="localisation" column="localisation" />
+<property name="nbrePiste" column="nbrePiste" />
+<property name="nbreSol" column="nbreSol" />
+<property name="attenteAuSol" column="attenteAuSol" />
+<property name="accèsAuPiste" column="accèsAuPiste" />
+<property name="délaiAnticollision" column="délaiAnticollision" />
+<property name="tempsdécollage" column="tempsdécollage" />
+<property name="tempsatterissage" column="tempsatterissage" />
+<property name="duréeboucle" column="duréeboucle" />
+
+
+
+
+</class>
+
+
+</hibernate-mapping>
+
+
